@@ -47,9 +47,8 @@ module Coinfresh
     end
 
     def make_api_request(req, uri, parse = true)        
-      signed_request = ApiAuth.sign!(req, @access_id, @secret_key)
-      req.add_field("Authorization", "Token token=#{self.access_token}") if self.access_token
-      make_request(req, uri, parse)
+      signed_request = ApiAuth.sign!(req, self.access_token, self.secret_key)      
+      make_request(signed_request, uri, parse)
     end
 
     def make_request(req, uri, parse = true)
