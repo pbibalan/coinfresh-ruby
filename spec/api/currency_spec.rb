@@ -2,8 +2,7 @@ require 'spec_helper'
 
 module Coinfresh
   module Api
-    describe Currency, :vcr do
-      let(:client) { Coinfresh::Client.new({access_token: 'dLXRyDy78ifx2robPiU5'}) }
+    describe Currency, :vcr do      
 
       describe "#list" do
         it "gets all the currencies" do

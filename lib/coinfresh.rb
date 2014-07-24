@@ -1,4 +1,5 @@
 require "coinfresh/version"
+require 'api-auth'
 require 'net/http'
 require 'json'
 

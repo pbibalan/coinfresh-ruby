@@ -2,8 +2,7 @@ require 'spec_helper'
 
 module Coinfresh
   module Api
-    describe Order, :vcr do
-      let(:client) { Coinfresh::Client.new({access_token: ENV['pa_access_token']}) }
+    describe Order, :vcr do      
 
       describe "#my" do
         it "gets all the orders" do

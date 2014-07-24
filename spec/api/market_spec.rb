@@ -3,7 +3,6 @@ require 'spec_helper'
 module Coinfresh
   module Api
     describe Market, :vcr do
-      let(:client) { Coinfresh::Client.new({access_token: 'dLXRyDy78ifx2robPiU5'}) }
 
       describe "#list" do
         it "gets all the markets" do

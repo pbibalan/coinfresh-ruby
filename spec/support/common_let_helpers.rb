@@ -51,5 +51,12 @@ module CommonLetHelpers
     }
   }
 
+  let(:client) { 
+    Coinfresh::Client.new({
+      access_token: 'dLXRyDy78ifx2robPiU5', 
+      secret_key: 'dLXRyDy78ifx2robPiU5', 
+      base_uri: 'http://localhost:3000'
+    })
+  }
 
 end

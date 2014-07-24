@@ -6,15 +6,18 @@ module Coinfresh
       attr_accessor :base_scope_url
     end
   
-    self.base_scope_url = 'http://localhost:3000' #ENV["coinfresh_base_url"]
+    self.base_scope_url = 'https://coinfresh.com' #ENV["coinfresh_base_url"]
     
     include Coinfresh::Http        
 
     attr_accessor :access_token
+    attr_accessor :secret_key
     attr_accessor :end_points
 
-    def initialize(credentials = {})
-      self.access_token = credentials[:access_token]
+    def initialize(options = {})
+      self.access_token = options[:access_token]
+      self.secret_key = options[:secret_key]     
+      Coinfresh::Client.base_scope_url = options[:base_uri] if options[:base_uri]
       self.end_points = {}
     end
 
