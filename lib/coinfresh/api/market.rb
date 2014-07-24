@@ -1,4 +1,4 @@
-module CoinFresh
+module Coinfresh
   module Api
     class Market < Base
 

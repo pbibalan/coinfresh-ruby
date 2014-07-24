@@ -1,4 +1,4 @@
-module CoinFresh
+module Coinfresh
   module Api
     class Wallet < Base
 

@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/orders/18/cancel
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      - text/json
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token=dLXRyDy78ifx2robPiU5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.0
+      Date:
+      - Mon, 19 May 2014 15:09:14 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Security-Policy-Report-Only:
+      - default-src 'self'; connect-src 'self' ws://localhost:9292 ws://testnet.planetaltcoin.com:9292
+        ws://plannetaltcoin.com:4443; font-src 'self'; frame-src 'self'; img-src 'self'
+        https://chart.googleapis.com data:; media-src 'self'; object-src 'self'; script-src
+        'self' http://localhost:9292 http://localhost:3000/api/v1/orders:9292 https://plannetaltcoin.com:4443;
+        style-src 'self';
+      Etag:
+      - '"09fca85b141b71dfcdef69c58a854665"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b34b017b-17d3-4152-b592-edce5c9611fb
+      X-Runtime:
+      - '0.332609'
+    body:
+      encoding: UTF-8
+      string: '{"order":{"id":18,"created_at":"2014-05-19T14:45:20.697Z","status":"cancelled","order_type":"buy","price":0.001,"amount":0.001,"filled_amount":0.0,"market_id":2},"meta":{}}'
+    http_version: 
+  recorded_at: Mon, 19 May 2014 15:09:28 GMT
+recorded_with: VCR 2.9.0

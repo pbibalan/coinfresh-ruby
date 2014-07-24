@@ -1,10 +1,11 @@
-module CoinFresh
+module Coinfresh
   module Api
     class Order < Base
 
       include Coinfresh::ApiOperation::List
-      include Coinfresh::ApiOperation::Findable
+      include Coinfresh::ApiOperation::Find
       include Coinfresh::ApiOperation::Create
+      include Coinfresh::ApiOperation::New
 
       def my(params = {})
         response = client.get("#{end_point_url}/my", params)

@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/orders/my
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      - text/json
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Token token=dLXRyDy78ifx2robPiU5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.0
+      Date:
+      - Mon, 19 May 2014 14:33:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Security-Policy-Report-Only:
+      - default-src 'self'; connect-src 'self' ws://localhost:9292 ws://testnet.planetaltcoin.com:9292
+        ws://plannetaltcoin.com:4443; font-src 'self'; frame-src 'self'; img-src 'self'
+        https://chart.googleapis.com data:; media-src 'self'; object-src 'self'; script-src
+        'self' http://localhost:9292 http://localhost:3000/api/v1/orders:9292 https://plannetaltcoin.com:4443;
+        style-src 'self';
+      Etag:
+      - '"d9e85842d2ba63aed945591684939d43"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=yhS7rmpKspifcWC3688F67Ty9cVN32VEql4C5GKb82U%3D; path=/
+      - _planetaltcoin_session=RjdDRFY5TDFTYnJrcitVS1IySjIwMVh1T3JmZE1kcGROeHlseXpJV1ZHRWJiMGtqTjg3N2xna0E4WjhTT2pqOXJkdVREc2NRNURlTnVWamJDUmMxbEpuVzJmQmNlVTV0a1IxRCs3Zi8wenZ2VHUzQzJ1bkcrZWJPNTRPaFdia25seUh5bnVhd25ucllLZlBJREdsY3JoY1IwaTZPdnFLN1B2ZGl3YzdadjRoWWwwS1pzOGxjRmM3QTMxSWlnYzhpLS12dlBtNEVwOFNlWHZVNFpvcEJ2eENBPT0%3D--72786dba8390695c857ce1d6c56593f29b45b20d;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 1ae591b0-10b2-49a8-8973-30fa21fbf36e
+      X-Runtime:
+      - '0.106232'
+    body:
+      encoding: UTF-8
+      string: '{"orders":[{"id":1,"created_at":"2014-05-13T02:58:11.578Z","status":"active","order_type":"buy","price":0.001,"amount":10.0,"filled_amount":2.0,"market_id":1},{"id":2,"created_at":"2014-05-13T02:58:25.977Z","status":"active","order_type":"buy","price":0.0009,"amount":10.0,"filled_amount":0.0,"market_id":1},{"id":3,"created_at":"2014-05-13T02:58:30.311Z","status":"active","order_type":"buy","price":0.0008,"amount":10.0,"filled_amount":0.0,"market_id":1},{"id":4,"created_at":"2014-05-13T02:58:34.854Z","status":"active","order_type":"buy","price":0.0007,"amount":10.0,"filled_amount":0.0,"market_id":1},{"id":5,"created_at":"2014-05-13T02:58:40.368Z","status":"active","order_type":"buy","price":0.0006,"amount":10.0,"filled_amount":0.0,"market_id":1},{"id":6,"created_at":"2014-05-13T02:58:41.575Z","status":"cancelled","order_type":"buy","price":0.0006,"amount":10.0,"filled_amount":0.0,"market_id":1},{"id":7,"created_at":"2014-05-13T03:21:05.944Z","status":"active","order_type":"buy","price":0.0001,"amount":10.0,"filled_amount":0.0,"market_id":2},{"id":8,"created_at":"2014-05-13T03:21:10.879Z","status":"active","order_type":"buy","price":0.00008,"amount":10.0,"filled_amount":0.0,"market_id":2},{"id":9,"created_at":"2014-05-13T03:21:14.449Z","status":"active","order_type":"buy","price":0.00006,"amount":10.0,"filled_amount":0.0,"market_id":2},{"id":10,"created_at":"2014-05-13T03:21:31.055Z","status":"active","order_type":"buy","price":0.0001,"amount":10.0,"filled_amount":0.0,"market_id":3},{"id":11,"created_at":"2014-05-13T03:21:43.975Z","status":"active","order_type":"buy","price":0.00008,"amount":10.0,"filled_amount":0.0,"market_id":3},{"id":12,"created_at":"2014-05-13T03:21:47.645Z","status":"active","order_type":"buy","price":0.00006,"amount":10.0,"filled_amount":0.0,"market_id":3},{"id":13,"created_at":"2014-05-13T03:21:48.720Z","status":"cancelled","order_type":"buy","price":0.00006,"amount":10.0,"filled_amount":0.0,"market_id":3},{"id":14,"created_at":"2014-05-14T06:20:07.236Z","status":"filled","order_type":"sell","price":0.001,"amount":1.0,"filled_amount":1.0,"market_id":1},{"id":15,"created_at":"2014-05-14T06:27:20.859Z","status":"filled","order_type":"sell","price":0.0009,"amount":1.0,"filled_amount":1.0,"market_id":1},{"id":16,"created_at":"2014-05-17T06:32:38.909Z","status":"active","order_type":"buy","price":0.1,"amount":1.0,"filled_amount":0.0,"market_id":4},{"id":17,"created_at":"2014-05-17T06:33:05.815Z","status":"active","order_type":"buy","price":0.09,"amount":1.0,"filled_amount":0.0,"market_id":4}],"meta":{"total":17,"per_page":25,"order":"orders.id","order_dir":"asc","num_pages":1}}'
+    http_version: 
+  recorded_at: Mon, 19 May 2014 14:33:51 GMT
+recorded_with: VCR 2.9.0

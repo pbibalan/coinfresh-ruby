@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/orders
+    body:
+      encoding: UTF-8
+      string: '{"order":{"order_type":"buy","amount":0.001,"price":0.001,"market_id":2}}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      - text/json
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token=mbqjGte-A7p3m57sMhdN
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Security-Policy-Report-Only:
+      - default-src 'self'; connect-src 'self' ws://localhost:9292 ws://testnet.planetaltcoin.com:9292
+        wss://planetaltcoin.com:4443; font-src 'self'; frame-src 'self'; img-src 'self'
+        https://www.google-analytics.com/ data:; media-src 'self'; object-src 'self';
+        script-src 'self' http://localhost:9292 http://testnet.planetaltcoin.com:9292
+        https://planetaltcoin.com:4443 https://ssl.google-analytics.com/ https://www.google-analytics.com/;
+        style-src 'self' 'unsafe-inline';
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"453777ca409d65ca7a2e8da6eb200fce"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=XMrl2Xar6s0%2FnsQezA9V3WUFb2Oz5rUhyMstKVgwJ8k%3D; path=/
+      - _planetaltcoin_session=dnIxRVdmU2tMNFJEUG9xdWdKUDJOZkdTdUhiWTBPTHYzVms4R1pZOU9NaU1aTmx4dmpJNUF3Ykx4NXVlNXFpVzNOdmVCbmQ1VUdldStpakR0VjR3TFlWcEpnRTVId2JZYTQvTVVTU2wxZXVxZjVvQVdHVkFkQVVzd1E5QVJYN09zdjI2NEo4NXZxZ3ZKengyMXVjZzFkUG1TZk55RnkrRDYyelpIOWlLSlJVcm95am0zK2FvVXJydm4xVVZwekVQLS1DWU1tb0dCMGgxb0ZGNlUzY1BVd3pRPT0%3D--5ff1a52d2ec6003d97558ffc659268013d9f6dbe;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 66d49ff0-91d1-4734-b61e-05eb28352a7b
+      X-Runtime:
+      - '0.070172'
+      Connection:
+      - close
+      Server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"order":{"id":79963,"status":"active","order_type":"buy","price":0.001,"amount":0.001,"filled_amount":0.0,"market_id":2,"created_at":"2014-06-19T01:38:26.239Z"},"meta":{}}'
+    http_version: 
+  recorded_at: Thu, 19 Jun 2014 01:38:26 GMT
+recorded_with: VCR 2.9.0

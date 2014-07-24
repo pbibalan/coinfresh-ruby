@@ -125,13 +125,6 @@ module Coinfresh
       end
 
       private
-      def polymorphic_object(attributes, accepted_types)
-        if accepted_types.include? attributes["type"]
-          klass = PA.const_get attributes["type"].intern
-          klass.new(attributes, client)
-        end
-      end
-
       def write_attribute(name, value)
         instance_variable_set("@#{name}", value)
       end
@@ -145,7 +138,7 @@ module Coinfresh
       end
 
       def paramify(val)      
-        if val.kind_of? PA::Model::Base
+        if val.kind_of? Coinfresh::Model::Base
           val.to_params
         elsif val.kind_of? Array
           val.collect{|v| paramify(v) }

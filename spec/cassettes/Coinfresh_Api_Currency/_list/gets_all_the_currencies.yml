@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/currencies
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      - text/json
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Token token=dLXRyDy78ifx2robPiU5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.0
+      Date:
+      - Mon, 19 May 2014 14:14:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Security-Policy-Report-Only:
+      - default-src 'self'; connect-src 'self' ws://localhost:9292 ws://testnet.planetaltcoin.com:9292
+        ws://plannetaltcoin.com:4443; font-src 'self'; frame-src 'self'; img-src 'self'
+        https://chart.googleapis.com data:; media-src 'self'; object-src 'self'; script-src
+        'self' http://localhost:9292 https://planetaltcoin.com:9292 https://plannetaltcoin.com:4443;
+        style-src 'self';
+      Etag:
+      - '"e130981594780b9f66176da842408239"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=COQgN8fa4tcGAGqFUSNy0unUeVTemmtFmLFZfXVW6RQ%3D; path=/
+      - _planetaltcoin_session=UDkxMEpzZ2M0ODNrWE9iS2Y4R1BBcitVZE1LcU5icmpDVEFlWjBoM2NOOEwwWWJBRGsxQVl5QzhDN1k3K3RjVk9EODNVanBIYnYvbmNpMWw5SWYvWUR0V2dXYzhTajBRRDJEOWJpN01lb0ZxdkxmWFdIb0I5dTRZbDZvbDVLUEt0dTRRT3d4Slo0ZllHbncxVkhaN0ZjSkh3c1pTbzdtenF4UEEwZUV6czNQT0JQeC9CQWNObWNpak40K3BhYWhWLS1nb0poYmxWNFlXMFZON2pZd3ZrcVFBPT0%3D--ac53fa51fc10903237e083aa6f7d0360aa83b2d5;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 9949b41b-7b54-41f0-a8b6-ad4b9f7e9a5b
+      X-Runtime:
+      - '0.012181'
+    body:
+      encoding: UTF-8
+      string: '{"currencies":[{"id":1,"created_at":"2014-05-13T02:36:04.001Z","name":"Bitcoin","ticker":"BTC","withdraw_transaction_fee":0.0001},{"id":2,"created_at":"2014-05-13T02:36:04.013Z","name":"Litecoin","ticker":"LTC","withdraw_transaction_fee":0.0001},{"id":3,"created_at":"2014-05-13T02:36:04.021Z","name":"Dogecoin","ticker":"DOGE","withdraw_transaction_fee":0.0001},{"id":4,"created_at":"2014-05-13T02:36:04.026Z","name":"Namecoin","ticker":"NMC","withdraw_transaction_fee":0.0001}],"meta":{"total":4,"per_page":25,"order":"currencies.id","order_dir":"asc","num_pages":1}}'
+    http_version: 
+  recorded_at: Mon, 19 May 2014 14:14:47 GMT
+recorded_with: VCR 2.9.0
