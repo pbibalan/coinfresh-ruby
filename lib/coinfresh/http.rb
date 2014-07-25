@@ -1,3 +1,5 @@
+require 'api-auth'
+
 module Coinfresh
   
   module Http
