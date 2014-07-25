@@ -47,8 +47,10 @@ module Coinfresh
     end
 
     def make_api_request(req, uri, parse = true)        
-      signed_request = ApiAuth.sign!(req, self.access_token, self.secret_key)      
-      make_request(signed_request, uri, parse)
+      if self.access_token && self.secret_key
+        req = ApiAuth.sign!(req, self.access_token, self.secret_key)      
+      end
+      make_request(req, uri, parse)
     end
 
     def make_request(req, uri, parse = true)
@@ -76,7 +78,7 @@ module Coinfresh
       when Net::HTTPUnauthorized
         raise Coinfresh::Http::Unauthorized.new(body["message"])
       when Net::HTTPBadRequest
-        raise oinfresh::Http::BadRequest.new(body["message"])        
+        raise Coinfresh::Http::BadRequest.new(body["message"])        
       when Net::HTTPSeeOther
         res["Location"]
       else
