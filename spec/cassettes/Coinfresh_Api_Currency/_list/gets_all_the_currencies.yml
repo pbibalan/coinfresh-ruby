@@ -14,25 +14,15 @@ http_interactions:
       - text/json
       User-Agent:
       - Ruby
+      Date:
+      - Tue, 29 Jul 2014 02:24:51 GMT
       Authorization:
-      - Token token=dLXRyDy78ifx2robPiU5
+      - APIAuth dLXRyDy78ifx2robPiU5:YvQQFk+mqTdk0Jb5iuFc04fbYtM=
   response:
     status:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx/1.6.0
-      Date:
-      - Mon, 19 May 2014 14:14:33 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Status:
-      - 200 OK
       X-Frame-Options:
       - DENY
       X-Xss-Protection:
@@ -42,26 +32,33 @@ http_interactions:
       X-Ua-Compatible:
       - chrome=1
       Content-Security-Policy-Report-Only:
-      - default-src 'self'; connect-src 'self' ws://localhost:9292 ws://testnet.planetaltcoin.com:9292
-        ws://plannetaltcoin.com:4443; font-src 'self'; frame-src 'self'; img-src 'self'
-        https://chart.googleapis.com data:; media-src 'self'; object-src 'self'; script-src
-        'self' http://localhost:9292 https://planetaltcoin.com:9292 https://plannetaltcoin.com:4443;
-        style-src 'self';
+      - default-src 'self'; connect-src 'self' ws://localhost:9292 ws://testnet.CoinFresh.com:9292
+        wss://CoinFresh.com:4443; font-src 'self'; frame-src 'self'; img-src 'self'
+        https://www.google-analytics.com/ data:; media-src 'self'; object-src 'self';
+        script-src 'self' http://localhost:9292 http://testnet.CoinFresh.com:9292
+        https://CoinFresh.com:4443 https://ssl.google-analytics.com/ https://www.google-analytics.com/;
+        style-src 'self' 'unsafe-inline';
+      Content-Type:
+      - application/json; charset=utf-8
       Etag:
-      - '"e130981594780b9f66176da842408239"'
+      - '"00b3fc05bd837a5f61004f40bcbc4ebe"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - XSRF-TOKEN=COQgN8fa4tcGAGqFUSNy0unUeVTemmtFmLFZfXVW6RQ%3D; path=/
-      - _planetaltcoin_session=UDkxMEpzZ2M0ODNrWE9iS2Y4R1BBcitVZE1LcU5icmpDVEFlWjBoM2NOOEwwWWJBRGsxQVl5QzhDN1k3K3RjVk9EODNVanBIYnYvbmNpMWw5SWYvWUR0V2dXYzhTajBRRDJEOWJpN01lb0ZxdkxmWFdIb0I5dTRZbDZvbDVLUEt0dTRRT3d4Slo0ZllHbncxVkhaN0ZjSkh3c1pTbzdtenF4UEEwZUV6czNQT0JQeC9CQWNObWNpak40K3BhYWhWLS1nb0poYmxWNFlXMFZON2pZd3ZrcVFBPT0%3D--ac53fa51fc10903237e083aa6f7d0360aa83b2d5;
+      - XSRF-TOKEN=wW83K6KP3UZk7xpCVaRPhBk6iOfxZeIil09QXU88T%2Bg%3D; path=/
+      - _planetaltcoin_session=NXZDZUl5NTBQRXVBWEo1YnJ4cjhVYmhwZHlHbzFFcDBORmZDc1VlWHFlQWI4QmM3OTBpS2tFL3ZTUzg5ZVZaWmdPbGJPeU9EalIwREo2SU1pYXEycWdNZzVydTJOUjhzM2hBd2w0RGp2QUVLWXhrQWYweEZTS1l6QjZqeGlSQ2F2aGd6Y3p1eWpLMS9qVElsMFlvMmlqb3R1S29QQ2k2UFlpbWp0aDhxd2JDcERtaXR1Rm0za3ZtT0lPWnA2ZEo4LS1nL2JGZW9FREk1dk83NDFkQWhDcW5RPT0%3D--eca8df279a045c54fb54907ac6aa289ad511f7e1;
         path=/; HttpOnly
       X-Request-Id:
-      - 9949b41b-7b54-41f0-a8b6-ad4b9f7e9a5b
+      - 8ebf03f7-e15b-4c41-8709-246255e64f6f
       X-Runtime:
-      - '0.012181'
+      - '0.029091'
+      Connection:
+      - close
+      Server:
+      - thin 1.5.1 codename Straight Razor
     body:
       encoding: UTF-8
-      string: '{"currencies":[{"id":1,"created_at":"2014-05-13T02:36:04.001Z","name":"Bitcoin","ticker":"BTC","withdraw_transaction_fee":0.0001},{"id":2,"created_at":"2014-05-13T02:36:04.013Z","name":"Litecoin","ticker":"LTC","withdraw_transaction_fee":0.0001},{"id":3,"created_at":"2014-05-13T02:36:04.021Z","name":"Dogecoin","ticker":"DOGE","withdraw_transaction_fee":0.0001},{"id":4,"created_at":"2014-05-13T02:36:04.026Z","name":"Namecoin","ticker":"NMC","withdraw_transaction_fee":0.0001}],"meta":{"total":4,"per_page":25,"order":"currencies.id","order_dir":"asc","num_pages":1}}'
+      string: '{"currencies":[{"id":1,"name":"Bitcoin","ticker":"BTC","withdraw_transaction_fee":0.0001,"deposit_confirmations":3},{"id":2,"name":"Litecoin","ticker":"LTC","withdraw_transaction_fee":0.0001,"deposit_confirmations":6},{"id":3,"name":"Dogecoin","ticker":"DOGE","withdraw_transaction_fee":0.0001,"deposit_confirmations":12},{"id":4,"name":"Namecoin","ticker":"NMC","withdraw_transaction_fee":0.0001,"deposit_confirmations":3}],"meta":{"total":4,"per_page":25,"order":"currencies.id","order_dir":"asc","num_pages":1}}'
     http_version: 
-  recorded_at: Mon, 19 May 2014 14:14:47 GMT
-recorded_with: VCR 2.9.0
+  recorded_at: Tue, 29 Jul 2014 02:24:51 GMT
+recorded_with: VCR 2.9.2

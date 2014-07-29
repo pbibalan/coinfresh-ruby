@@ -17,7 +17,6 @@ VCR.configure do |c|
 end
 
 RSpec.configure do |config|
-  config.treat_symbols_as_metadata_keys_with_true_values = true
   config.filter_run_excluding :external => true
   config.include CommonLetHelpers  
 end
