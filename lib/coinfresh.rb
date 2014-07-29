@@ -19,7 +19,8 @@ module Coinfresh
       :Market =>              'market',
       :Order =>               'order',
       :Wallet =>              'wallet',
-      :Trade =>               'trade'
+      :Trade =>               'trade',
+      :Withdraw =>            'withdraw'
     }.each_pair do |klass, file| 
       autoload klass, "coinfresh/model/#{file}"
     end
@@ -45,7 +46,8 @@ module Coinfresh
       :Currency =>          'currency',
       :Market =>            'market',
       :Order =>             'order',
-      :Wallet =>            'wallet'      
+      :Wallet =>            'wallet',      
+      :Withdraw =>          'withdraw'
     }.each_pair do |klass, file| 
       autoload klass, "coinfresh/api/#{file}"
     end

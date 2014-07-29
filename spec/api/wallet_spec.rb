@@ -12,6 +12,7 @@ module Coinfresh
           expect(wallet.id).not_to be_nil
           expect(wallet.balance).not_to be_nil
           expect(wallet.deposit_address).not_to be_nil
+          expect(wallet.in_escrow).not_to be_nil
           expect(wallet.total_withdraw).not_to be_nil
           expect(wallet.unconfirmed_deposit).not_to be_nil
           expect(wallet.currency).not_to be_nil          
@@ -24,6 +25,7 @@ module Coinfresh
           expect(wallet.id).not_to be_nil
           expect(wallet.balance).not_to be_nil
           expect(wallet.deposit_address).not_to be_nil
+          expect(wallet.in_escrow).not_to be_nil
           expect(wallet.total_withdraw).not_to be_nil
           expect(wallet.unconfirmed_deposit).not_to be_nil
           expect(wallet.currency).not_to be_nil          

@@ -25,7 +25,8 @@ module Coinfresh
       markets:        Coinfresh::Api::Market,
       orders:         Coinfresh::Api::Order,
       currencies:     Coinfresh::Api::Currency,
-      wallets:        Coinfresh::Api::Wallet           
+      wallets:        Coinfresh::Api::Wallet,         
+      withdraws:       Coinfresh::Api::Withdraw
     }.each_pair do |method, klass| 
       define_method method do
         end_points[method] ||= klass.new(self)
