@@ -2,7 +2,7 @@ module Coinfresh
   module Model
     class Withdraw < Base
       set_attributes(id:           {type: :int, readonly: true},                                  
-                    created_at:    {type: :string, readonly: true},                     
+                    created_at:    {type: :datetime, readonly: true},                     
                     address:       {type: :string, readonly: true},    
                     amount:        {type: :decimal, readonly: true},      
                     txid:          {type: :string, readonly: true},   

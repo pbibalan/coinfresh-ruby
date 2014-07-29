@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/cash_flows?currency=BTC&limit=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      - text/json
+      User-Agent:
+      - Ruby
+      Date:
+      - Tue, 29 Jul 2014 05:39:28 GMT
+      Authorization:
+      - APIAuth da5AgdjTchH4a5APfkBRVW8jQ6zdbiQPD2i3huaY:ofaQVitXJ55oZSF4JQbnlf3+Qsc=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Security-Policy-Report-Only:
+      - default-src 'self'; connect-src 'self' ws://localhost:9292 ws://testnet.CoinFresh.com:9292
+        wss://CoinFresh.com:4443; font-src 'self'; frame-src 'self'; img-src 'self'
+        https://www.google-analytics.com/ data:; media-src 'self'; object-src 'self';
+        script-src 'self' http://localhost:9292 http://testnet.CoinFresh.com:9292
+        https://CoinFresh.com:4443 https://ssl.google-analytics.com/ https://www.google-analytics.com/;
+        style-src 'self' 'unsafe-inline';
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"09d33313419f568a8c552760ec08527b"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=RbGxJxOTbbMg9Btp63TNAq4TVQC2WAHreQpD0P836ks%3D; path=/
+      - _planetaltcoin_session=S1k3T0h2QWdPUml0YURFQWxVWTJheVpNV2hzNmFXdmI2UlNSTmIrRlo0eExxREVXbXNWdGFYZ0ZKa2RCVVl1ajQya2ROM1pBbm1yWGwvLzVtVnRwdm95L2FuWVIxYnBHZEYzWUpkYU42WnhLb2p6Yk1ORmg5NGxmVXlvZ29VK3BkOG0vYUFvTVNiQnZkN0QrZXlnLzVaL3diWVRzTDg2VVVnYWh6Y25DL0xIRnY5T3AxSkw3cHEzdk1tMWNZMW90LS1GVXNseVBGWjJsN1lpbk0rNXUrdVZRPT0%3D--3151f41fd735a5419b8395bc3056d3cdb77b0460;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 85248a48-598b-4828-8cee-1d945aeb7ea2
+      X-Runtime:
+      - '0.141131'
+      Connection:
+      - close
+      Server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"cash_flows":[{"id":628048,"amount":300.0,"cash_type":"deposit","created_at":"2014-07-26T21:55:26.492Z"},{"id":628045,"amount":300.0,"cash_type":"deposit","created_at":"2014-07-26T21:54:55.616Z"},{"id":628042,"amount":300.0,"cash_type":"deposit","created_at":"2014-07-26T21:54:46.455Z"},{"id":628017,"amount":-30.15,"cash_type":"sell","created_at":"2014-06-23T11:35:50.638Z"},{"id":628016,"amount":33.83,"cash_type":"buy","created_at":"2014-06-23T11:35:50.378Z"},{"id":628001,"amount":-42.21,"cash_type":"sell","created_at":"2014-06-23T11:35:44.238Z"},{"id":627993,"amount":-17.085,"cash_type":"sell","created_at":"2014-06-23T11:35:42.902Z"},{"id":627981,"amount":-30.15,"cash_type":"sell","created_at":"2014-06-23T11:35:37.511Z"},{"id":627977,"amount":-128.64,"cash_type":"sell","created_at":"2014-06-23T11:35:37.342Z"},{"id":627959,"amount":74.625,"cash_type":"buy","created_at":"2014-06-23T11:35:27.785Z"},{"id":627955,"amount":14.925,"cash_type":"buy","created_at":"2014-06-23T11:35:27.552Z"},{"id":627952,"amount":-17.085,"cash_type":"sell","created_at":"2014-06-23T11:35:27.355Z"},{"id":627947,"amount":-63.315,"cash_type":"sell","created_at":"2014-06-23T11:35:26.523Z"},{"id":627922,"amount":50.745,"cash_type":"buy","created_at":"2014-06-23T11:35:19.278Z"},{"id":627919,"amount":-66.33,"cash_type":"sell","created_at":"2014-06-23T11:35:19.102Z"},{"id":627915,"amount":-153.765,"cash_type":"sell","created_at":"2014-06-23T11:35:18.475Z"},{"id":627914,"amount":131.34,"cash_type":"buy","created_at":"2014-06-23T11:35:13.661Z"},{"id":627882,"amount":-78.39,"cash_type":"sell","created_at":"2014-06-23T11:35:05.251Z"},{"id":627878,"amount":-56.28,"cash_type":"sell","created_at":"2014-06-23T11:35:05.078Z"},{"id":627853,"amount":6.965,"cash_type":"buy","created_at":"2014-06-23T11:35:02.451Z"},{"id":627850,"amount":-16.08,"cash_type":"sell","created_at":"2014-06-23T11:35:02.423Z"},{"id":627848,"amount":27.86,"cash_type":"buy","created_at":"2014-06-23T11:35:02.220Z"},{"id":627844,"amount":6.965,"cash_type":"buy","created_at":"2014-06-23T11:35:01.893Z"},{"id":627814,"amount":43.78,"cash_type":"buy","created_at":"2014-06-23T11:34:54.604Z"},{"id":627798,"amount":34.825,"cash_type":"buy","created_at":"2014-06-23T11:34:48.611Z"}],"meta":{"total":80275,"per_page":25,"order":"cash_flows.id","order_dir":"asc","num_pages":3211}}'
+    http_version: 
+  recorded_at: Tue, 29 Jul 2014 05:39:28 GMT
+recorded_with: VCR 2.9.2
