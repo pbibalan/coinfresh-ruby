@@ -5,6 +5,10 @@ module Coinfresh
       include Coinfresh::ApiOperation::List
       include Coinfresh::ApiOperation::Find
 
+      def trades(id)
+        response = client.get("#{end_point_url}/#{id}/trades")        
+        response['trades'].collect {|r| Coinfresh::Model::Trade.new(r, client) }
+      end
 
       private
 

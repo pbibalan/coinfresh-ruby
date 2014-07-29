@@ -18,7 +18,8 @@ module Coinfresh
       :Currency =>            'currency',
       :Market =>              'market',
       :Order =>               'order',
-      :Wallet =>              'wallet'
+      :Wallet =>              'wallet',
+      :Trade =>               'trade'
     }.each_pair do |klass, file| 
       autoload klass, "coinfresh/model/#{file}"
     end

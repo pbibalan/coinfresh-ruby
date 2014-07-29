@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/wallets
+    body:
+      encoding: UTF-8
+      string: '{"wallet":{"currency_id":4}}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      - text/json
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+      Content-Md5:
+      - H1UuCOjOesNYXpEl2wcggA==
+      Date:
+      - Tue, 29 Jul 2014 03:44:48 GMT
+      Authorization:
+      - APIAuth da5AgdjTchH4a5APfkBRVW8jQ6zdbiQPD2i3huaY:CpuRad+dQDRQH0pUH4A7ag1EUrc=
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Security-Policy-Report-Only:
+      - default-src 'self'; connect-src 'self' ws://localhost:9292 ws://testnet.CoinFresh.com:9292
+        wss://CoinFresh.com:4443; font-src 'self'; frame-src 'self'; img-src 'self'
+        https://www.google-analytics.com/ data:; media-src 'self'; object-src 'self';
+        script-src 'self' http://localhost:9292 http://testnet.CoinFresh.com:9292
+        https://CoinFresh.com:4443 https://ssl.google-analytics.com/ https://www.google-analytics.com/;
+        style-src 'self' 'unsafe-inline';
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"b0cc2ed76c0c26f8a0accb4cf9147e28"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - bbb40561-b944-486b-8b45-54f1f190945c
+      X-Runtime:
+      - '0.219336'
+      Connection:
+      - close
+      Server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"wallet":{"id":11,"balance":0.0,"deposit_address":"mxcA1w3sEfWUjjRYSUozFxzdiiHwK4dptF","in_escrow":0.0,"total_deposit":0.0,"total_withdraw":0.0,"unconfirmed_deposit":0.0,"currency":{"id":4,"name":"Namecoin","ticker":"NMC","withdraw_transaction_fee":0.0001,"deposit_confirmations":3}},"meta":{}}'
+    http_version: 
+  recorded_at: Tue, 29 Jul 2014 03:44:48 GMT
+recorded_with: VCR 2.9.2

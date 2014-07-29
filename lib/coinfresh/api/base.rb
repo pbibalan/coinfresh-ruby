@@ -10,7 +10,7 @@ module Coinfresh
 
       private
       def data_item(params)
-        data_klass(params).new(params, client)
+        data_klass.new(params, client)
       end
 
     end

@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/markets/1/trades
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      - text/json
+      User-Agent:
+      - Ruby
+      Date:
+      - Tue, 29 Jul 2014 02:53:18 GMT
+      Authorization:
+      - APIAuth dLXRyDy78ifx2robPiU5:+7gFLRgAE7HKeuAB0fYpaJqf2jY=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Security-Policy-Report-Only:
+      - default-src 'self'; connect-src 'self' ws://localhost:9292 ws://testnet.CoinFresh.com:9292
+        wss://CoinFresh.com:4443; font-src 'self'; frame-src 'self'; img-src 'self'
+        https://www.google-analytics.com/ data:; media-src 'self'; object-src 'self';
+        script-src 'self' http://localhost:9292 http://testnet.CoinFresh.com:9292
+        https://CoinFresh.com:4443 https://ssl.google-analytics.com/ https://www.google-analytics.com/;
+        style-src 'self' 'unsafe-inline';
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"85f05d989339bee6267a7e408593f2fd"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=RW8jM%2B5k2IFVQ56nh4sxNUflq2YHN1t9JyL6LSpJOTs%3D; path=/
+      - _planetaltcoin_session=T0FGd0g1OU1aUTFKd3E1eW9UOWJ1WFFlVlgwR0x6bEk2a0w5OW83eWltVmZFOHZpNmFJdndYQmhzTWIrdkoxRHVtbytCaU1TSkE4ek16bHBkTEZIS3FUMDlFUVZLbVZSL0l3MW5SYXQxWUFsMVVxdE9yaEdLbEk2T2ovVDNhcmEwRW5qNm9Ga3pMSG9TdWl5M1E5bzBKVnFFWjBUaHdQaU9nTHgwQjFJRXd6ak1TTDBQVXdFbWIvZUFvTmVrN3RCLS1QenZROXJ4RE92aC9CYkRrSVNFd0JnPT0%3D--f0b1c1f45fc8dd62ff741cc835a0a9b97f7830a2;
+        path=/; HttpOnly
+      X-Request-Id:
+      - d2b8563c-8aa1-4326-a608-d1216ddbec78
+      X-Runtime:
+      - '1.740290'
+      Connection:
+      - close
+      Server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"trades":[{"id":152871,"amount":3.0,"price":15.0,"created_at":"2014-06-23T11:31:30.480Z","buy_order_id":229505,"sell_order_id":229548},{"id":152879,"amount":2.0,"price":14.0,"created_at":"2014-06-23T11:31:37.795Z","buy_order_id":229453,"sell_order_id":229560},{"id":152880,"amount":1.0,"price":12.0,"created_at":"2014-06-23T11:31:37.985Z","buy_order_id":229479,"sell_order_id":229560},{"id":152897,"amount":6.0,"price":19.0,"created_at":"2014-06-23T11:31:59.942Z","buy_order_id":229567,"sell_order_id":229586},{"id":152907,"amount":4.0,"price":27.0,"created_at":"2014-06-23T11:32:10.246Z","buy_order_id":229603,"sell_order_id":229604},{"id":152908,"amount":1.0,"price":27.0,"created_at":"2014-06-23T11:32:10.478Z","buy_order_id":229603,"sell_order_id":229496},{"id":152909,"amount":2.0,"price":27.0,"created_at":"2014-06-23T11:32:10.688Z","buy_order_id":229603,"sell_order_id":228984},{"id":152910,"amount":1.0,"price":27.0,"created_at":"2014-06-23T11:32:10.878Z","buy_order_id":229603,"sell_order_id":229070},{"id":152919,"amount":1.0,"price":24.0,"created_at":"2014-06-23T11:32:18.431Z","buy_order_id":229613,"sell_order_id":229070},{"id":152929,"amount":2.0,"price":19.0,"created_at":"2014-06-23T11:32:26.521Z","buy_order_id":229567,"sell_order_id":229626},{"id":152930,"amount":2.0,"price":14.0,"created_at":"2014-06-23T11:32:26.760Z","buy_order_id":229625,"sell_order_id":229626},{"id":152933,"amount":8.0,"price":14.0,"created_at":"2014-06-23T11:32:34.529Z","buy_order_id":229625,"sell_order_id":229638},{"id":152934,"amount":2.0,"price":14.0,"created_at":"2014-06-23T11:32:34.702Z","buy_order_id":229637,"sell_order_id":229638},{"id":152944,"amount":2.0,"price":14.0,"created_at":"2014-06-23T11:32:43.413Z","buy_order_id":229637,"sell_order_id":229650},{"id":152945,"amount":1.0,"price":14.0,"created_at":"2014-06-23T11:32:43.655Z","buy_order_id":229649,"sell_order_id":229650},{"id":152953,"amount":3.0,"price":19.0,"created_at":"2014-06-23T11:32:51.172Z","buy_order_id":229661,"sell_order_id":229650},{"id":152962,"amount":1.0,"price":19.0,"created_at":"2014-06-23T11:33:00.657Z","buy_order_id":229661,"sell_order_id":229678},{"id":152974,"amount":2.0,"price":25.0,"created_at":"2014-06-23T11:33:10.835Z","buy_order_id":229689,"sell_order_id":229678},{"id":152975,"amount":1.0,"price":25.0,"created_at":"2014-06-23T11:33:11.030Z","buy_order_id":229689,"sell_order_id":229070},{"id":152976,"amount":5.0,"price":25.0,"created_at":"2014-06-23T11:33:11.222Z","buy_order_id":229689,"sell_order_id":229288},{"id":152981,"amount":4.0,"price":12.0,"created_at":"2014-06-23T11:33:17.688Z","buy_order_id":229479,"sell_order_id":229704},{"id":152982,"amount":2.0,"price":10.0,"created_at":"2014-06-23T11:33:17.851Z","buy_order_id":229547,"sell_order_id":229704},{"id":152984,"amount":1.0,"price":30.0,"created_at":"2014-06-23T11:33:25.800Z","buy_order_id":229715,"sell_order_id":229288},{"id":152985,"amount":3.0,"price":30.0,"created_at":"2014-06-23T11:33:25.966Z","buy_order_id":229715,"sell_order_id":229716},{"id":152986,"amount":2.0,"price":30.0,"created_at":"2014-06-23T11:33:26.138Z","buy_order_id":229715,"sell_order_id":229370},{"id":152987,"amount":8.0,"price":26.0,"created_at":"2014-06-23T11:33:31.994Z","buy_order_id":229719,"sell_order_id":229720},{"id":152997,"amount":4.0,"price":10.0,"created_at":"2014-06-23T11:33:41.430Z","buy_order_id":229547,"sell_order_id":229732},{"id":152998,"amount":2.0,"price":9.0,"created_at":"2014-06-23T11:33:41.753Z","buy_order_id":212937,"sell_order_id":229732},{"id":152999,"amount":2.0,"price":9.0,"created_at":"2014-06-23T11:33:41.974Z","buy_order_id":213457,"sell_order_id":229732},{"id":153000,"amount":1.0,"price":9.0,"created_at":"2014-06-23T11:33:42.272Z","buy_order_id":213599,"sell_order_id":229732},{"id":153008,"amount":5.0,"price":21.0,"created_at":"2014-06-23T11:33:49.390Z","buy_order_id":229747,"sell_order_id":229748},{"id":153009,"amount":2.0,"price":21.0,"created_at":"2014-06-23T11:33:49.764Z","buy_order_id":229747,"sell_order_id":229720},{"id":153010,"amount":3.0,"price":21.0,"created_at":"2014-06-23T11:33:50.007Z","buy_order_id":229747,"sell_order_id":229370},{"id":153016,"amount":9.0,"price":23.0,"created_at":"2014-06-23T11:33:58.287Z","buy_order_id":229761,"sell_order_id":229762},{"id":153024,"amount":1.0,"price":24.0,"created_at":"2014-06-23T11:34:06.606Z","buy_order_id":229773,"sell_order_id":229762},{"id":153025,"amount":4.0,"price":24.0,"created_at":"2014-06-23T11:34:06.904Z","buy_order_id":229773,"sell_order_id":218138},{"id":153032,"amount":6.0,"price":17.0,"created_at":"2014-06-23T11:34:15.424Z","buy_order_id":229787,"sell_order_id":229788},{"id":153038,"amount":1.0,"price":23.0,"created_at":"2014-06-23T11:34:23.277Z","buy_order_id":229799,"sell_order_id":229800},{"id":153039,"amount":1.0,"price":23.0,"created_at":"2014-06-23T11:34:23.443Z","buy_order_id":229799,"sell_order_id":229788},{"id":153040,"amount":4.0,"price":23.0,"created_at":"2014-06-23T11:34:23.587Z","buy_order_id":229799,"sell_order_id":218138},{"id":153041,"amount":4.0,"price":23.0,"created_at":"2014-06-23T11:34:23.879Z","buy_order_id":229799,"sell_order_id":218534},{"id":153060,"amount":4.0,"price":30.0,"created_at":"2014-06-23T11:34:45.027Z","buy_order_id":229825,"sell_order_id":229806},{"id":153061,"amount":1.0,"price":30.0,"created_at":"2014-06-23T11:34:45.359Z","buy_order_id":229825,"sell_order_id":229826},{"id":153071,"amount":6.0,"price":28.0,"created_at":"2014-06-23T11:34:53.814Z","buy_order_id":229839,"sell_order_id":229826},{"id":153072,"amount":2.0,"price":28.0,"created_at":"2014-06-23T11:34:54.416Z","buy_order_id":229839,"sell_order_id":229840},{"id":153073,"amount":2.0,"price":28.0,"created_at":"2014-06-23T11:34:54.663Z","buy_order_id":229839,"sell_order_id":218534},{"id":153098,"amount":9.0,"price":17.0,"created_at":"2014-06-23T11:35:18.566Z","buy_order_id":229873,"sell_order_id":229874},{"id":153107,"amount":1.0,"price":17.0,"created_at":"2014-06-23T11:35:27.615Z","buy_order_id":229873,"sell_order_id":229888},{"id":153108,"amount":5.0,"price":15.0,"created_at":"2014-06-23T11:35:27.831Z","buy_order_id":229815,"sell_order_id":229888},{"id":153119,"amount":2.0,"price":21.0,"created_at":"2014-06-23T11:35:44.317Z","buy_order_id":229899,"sell_order_id":229912}]}'
+    http_version: 
+  recorded_at: Tue, 29 Jul 2014 02:53:20 GMT
+recorded_with: VCR 2.9.2

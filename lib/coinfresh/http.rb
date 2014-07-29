@@ -80,7 +80,16 @@ module Coinfresh
       when Net::HTTPUnauthorized
         raise Coinfresh::Http::Unauthorized.new(body["message"])
       when Net::HTTPBadRequest
-        raise Coinfresh::Http::BadRequest.new(body["message"])        
+        message = ""
+        if body["error"] 
+          message = [body["error"].to_s, body["message"].to_s].join(" ")
+        end
+
+        if body["errors"]
+          message = body["errors"]
+        end
+
+        raise Coinfresh::Http::BadRequest.new(message)        
       when Net::HTTPSeeOther
         res["Location"]
       else

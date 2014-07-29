@@ -3,7 +3,7 @@ module Coinfresh
     class Market < Base
       set_attributes(id:              {type: :int, readonly: true},
                    name:              {type: :string, readonly: true},
-                   last_price:        {type: :decimal, readonly: true}
+                   last_price:        {type: :decimal, readonly: true}                   
                   )
 
       has_association :base_currency,       Coinfresh::Model::Currency

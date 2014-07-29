@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/markets/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      - text/json
+      User-Agent:
+      - Ruby
+      Date:
+      - Tue, 29 Jul 2014 02:33:20 GMT
+      Authorization:
+      - APIAuth dLXRyDy78ifx2robPiU5:mCN/VOCc2h0Y6l8sHTTmkIhk9XY=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Security-Policy-Report-Only:
+      - default-src 'self'; connect-src 'self' ws://localhost:9292 ws://testnet.CoinFresh.com:9292
+        wss://CoinFresh.com:4443; font-src 'self'; frame-src 'self'; img-src 'self'
+        https://www.google-analytics.com/ data:; media-src 'self'; object-src 'self';
+        script-src 'self' http://localhost:9292 http://testnet.CoinFresh.com:9292
+        https://CoinFresh.com:4443 https://ssl.google-analytics.com/ https://www.google-analytics.com/;
+        style-src 'self' 'unsafe-inline';
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"543098f6ff444866c455cea3ce2fa518"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=OrpLeK5jqM5TZXaklNlOwxSeDsoALKxsGTdJ8IL%2B7GI%3D; path=/
+      - _planetaltcoin_session=ckVBWHkyZURYa1ErRkhHbkV6cXlMOERxOTJmZnorRDc4Sk45a082YjJlaVpicUFOaDQ5aHJ0dDRiZWtsWitQRWhDT3dyTnVPVC9GRWVXY1ZnYUQ0QTNYdkpaMTlDUDlqc3pZd0h3K0lKRWpubWYwMzE2RmhMRUhyU3hLbVMrZTRjNG41ZDF6b29qb1hEbHR5Tm1lNFpwVUhwYm9Id1BNTHR6Yyt2dmZxN3ZRNGdNOVlWVjh0REpjMGppdUdYaTJJLS1RMi81bkc2djdhRldsM2NsSFk4NlpBPT0%3D--7d8bcb24da0f794a50558f807d3bbb5a5ef86f1d;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 422c2d4e-cb11-47ac-9e35-44ff4a060d95
+      X-Runtime:
+      - '0.031198'
+      Connection:
+      - close
+      Server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"market":{"id":1,"name":"LTC/BTC","last_price":21.0,"currency":{"id":1,"name":"Bitcoin","ticker":"BTC","withdraw_transaction_fee":0.0001,"deposit_confirmations":3},"base_currency":{"id":2,"name":"Litecoin","ticker":"LTC","withdraw_transaction_fee":0.0001,"deposit_confirmations":6}},"meta":{}}'
+    http_version: 
+  recorded_at: Tue, 29 Jul 2014 02:33:20 GMT
+recorded_with: VCR 2.9.2

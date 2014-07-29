@@ -5,7 +5,7 @@ module Coinfresh
                    name:              {type: :string, readonly: true},
                    ticker:            {type: :string, readonly: true},
                    withdraw_transaction_fee: {type: :decimal, readonly: true},
-                   deposit_confirmations: {type: :integer, readonly: true}
+                   deposit_confirmations: {type: :int, readonly: true}
                   )
 
       private
